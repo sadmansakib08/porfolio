@@ -452,6 +452,11 @@ html {
   transform: translateY(0);
 }
 
+/* Mobile-only elements */
+.mobile-only {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .app-wrapper {
@@ -475,6 +480,18 @@ html {
 }
 
 @media (max-width: 768px) {
+  .mobile-only {
+    display: inline-block;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text > div {
+    justify-content: center;
+  }
+
   .navbar {
     padding: 0.6rem 1.5rem;
   }
